@@ -18,7 +18,7 @@ class Router
     public static function route(Request $request)
     {
 
-        $controller = "App\\Controller\\".$request->getController().'Controller';
+        $controller = "App\\Controller\\".ucfirst($request->getController()).'Controller';
         $method     = $request->getMethod();
         $args       = $request->getArgs();
 

@@ -47,4 +47,4 @@ puis ajouter le vhost ci-dessous dans le fichier suivant `httpd-vhosts.conf`
         
  3.Redémarrer les services de WampServer 
     
-
+Voici le lien de test: http://malek.tchat.viatorlab.com/

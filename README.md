@@ -6,7 +6,8 @@
 - Apache 2.4.27
 - MySql 5.7.19
 
-#Configuration de Bd
+##Configuration de Bd
+ 
   1.Importer le fichier Sql qui se trouve dans le répertoire `C:\wamp64\www\local.tchat\db\db_tchat.sql` dans phpmyadmin
   2.Éditer le fichier paramerters.php qui se trouve dans le répertoire 'C:\wamp64\www\local.tchat\config\' :
   
@@ -24,7 +25,8 @@
       ];
       
 
-#Configuration VHOST
+##Configuration VHOST
+
 1.Placer vous dans la repertoire  `C:\wamp64\bin\apache\apache2.4.27\conf\extra\`
 puis ajouter le vhost ci-dessous dans le fichier suivant `httpd-vhosts.conf`
 

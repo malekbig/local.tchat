@@ -20,7 +20,7 @@ class Render
     public function view($name, array $vars = null)
     {
 
-        $file = __DIR__.'/../../src/View/'.$name.'View.php';
+        $file = __DIR__.'/../../src/View/'.ucfirst($name).'View.php';
         if (is_file($file)) {
             if (isset($vars)) {
                 extract($vars);
@@ -39,7 +39,7 @@ class Render
      */
     public function model($name)
     {
-        $model = "App\\Model\\".$name.'Model';
+        $model = "App\\Model\\".ucfirst($name).'Model';
         if (class_exists($model, true)) {
             $registry        = Config::getInstance();
             $registry->$name = new $model;

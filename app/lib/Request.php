@@ -21,7 +21,7 @@ class Request
     {
         $sources           = explode('/', $_SERVER['REQUEST_URI']);
         $sources           = array_filter(array_filter($sources));
-        $this->_controller = ($c = array_shift($sources)) ? $c : 'index';
+        $this->_controller = ($c = array_shift($sources)) ? $c : ucfirst ( 'index' );
         $this->_method     = ($c = array_shift($sources)) ? $c : 'index';
         $this->_args       = (isset($sources[0])) ? $sources : [];
     }

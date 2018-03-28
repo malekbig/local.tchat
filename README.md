@@ -6,6 +6,7 @@
 - Apache 2.4.27
 - MySql 5.7.19
 
+
 ##Configuration de Bd
  
   1.Importer le fichier Sql qui se trouve dans le répertoire `C:\wamp64\www\local.tchat\db\db_tchat.sql` dans phpmyadmin
